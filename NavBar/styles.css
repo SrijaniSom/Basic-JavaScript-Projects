@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html
+    {
+        background-color: #E7ECEC;
+        font-family: 'Baloo Tammudu 2', cursive;
+    }
+.nav-main
+{
+    background-color: white;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 10px;
+    box-shadow: #BEBEBE 1rem 1rem 1rem;
+    
+}
+.ToggleButton
+    {
+        background: transparent;
+        border: transparent;
+        color:#0AC6EB;
+        width: 25px;
+        height: 25px;
+        justify-content: flex-end;
+        margin-left: 20%;
+        font-size: 1.5rem;
+        position: absolute;
+        right: 1rem;
+     
+    }
+.links
+{
+
+    padding: 2%;
+    margin-left: 10%;
+
+}
+.linkEach
+    {
+        color: black;
+        text-decoration:none;
+        font-size: 20px;
+        font-weight: lighter;
+        letter-spacing: 2px;
+        margin-right: 8px;
+        transition: 0.07s;
+        
+    }
+.linkEach:hover
+    {
+        color: #0AC6EB;
+        font-weight: bold;
+        transition: 0.07s;
+    }
+.socialMedia
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 15%;
+}
+.icon
+{
+    font-size: 1.5rem;
+    background: transparent;
+    border: transparent;
+    color: #0AC6EB;
+    margin-right:2%;
+}
+.icon:hover
+{
+    opacity: 60%;
+}
+.logo{
+    margin-left:5% ;
+}
+.iconDiv
+{
+    margin-right:8%;
+}
+.ToggleButton
+{
+    display: none;
+}
+.ToggleButton:hover{
+    color: #0CABBC;
+    cursor: pointer;
+}
+@media (max-width:900px){
+    .ToggleButton{
+        display: flex;
+    }
+    
+    .icon{
+        display: none;
+    }
+    .nav-main
+    {
+        flex-direction: column;
+        
+    }
+    .links
+    {
+        margin-top: 0%;
+        padding-top: 0%;
+        display: flex;
+        flex-direction: column;
+    }
+  
+   
+  
+    .linkEach:hover
+    {
+        width:100%;
+        font-size: large;
+        font-weight: 200;
+        color:#0AC6EB;
+       
+    }
+    .links ,.linkEach
+    {
+        height: 0;
+        overflow: hidden;
+        transition: var(--transition);
+    }
+    .show-links,.linkEach 
+    {
+        height: 14rem;
+    }
+
+}

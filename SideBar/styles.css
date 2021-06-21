@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+html
+{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+        
+       
+        .nav-main
+        {
+            width:100%;
+            display: flex ;
+            flex-direction: column;
+
+        }
+
+        .header
+        {
+            padding-top: 3%;
+            display: flex;
+            flex-direction: row;
+            padding-left: 3%;
+        }
+       .close
+        {
+            color: red;
+           
+            padding-left: 8%;
+            font-size: 35px;
+        }
+        .close:hover
+        {
+           opacity: 50%;
+           cursor:pointer;
+        }
+
+        .linkeach
+            {
+                font-size: 18px;
+                letter-spacing: 2px;
+                padding: 3%;
+            }
+        .linkeach:hover
+        {
+            cursor: pointer;
+            background-color:#6FDAE5 ;
+            color: #219AA6;
+            font-weight: 300;
+            font-size: 24px;
+        }
+        .SocialIcons
+            {
+                display: flex;
+                flex-direction:row;
+                position: absolute;
+                bottom:2rem;
+                margin-left: 4%;
+            }
+        .icon
+            {
+              
+                color:#3DDEEF;
+                background: transparent;
+                border: transparent;
+                text-decoration: none;
+                font-size: 30px;
+            }
+            .icon:hover
+            {
+                color: black;
+            }
+            .iconDiv
+            {
+                padding:4%;
+            }
+            
+    
+
+  
+   .ToggleButton
+    {
+        background: transparent;
+        border: transparent;
+        font-size: 38px;
+        color:#3DDEEF;
+        position: absolute;
+        top:3rem;
+        right:3rem;
+    }
+    .ToggleButton:hover
+    {
+        color: black;
+        cursor: pointer;
+    }
+    .showSideBar
+        {
+         background-color: black;
+        }
+    @media(min-width:800px)
+    {
+       .nav-main
+       {
+         display: none;
+       }
+    }
+
+    @media(max-width:800px)
+        {
+            .ToggleButton
+                {
+                    display:none;
+                }
+                
+        }
+    
