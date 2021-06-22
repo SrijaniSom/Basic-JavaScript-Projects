@@ -1,0 +1,212 @@
+*
+{
+    box-sizing: border-box;
+    margin:0%;
+    padding:0%;
+}
+
+html
+{
+    font-family: 'Hind Siliguri', sans-serif;
+    scroll-behavior: smooth;
+    
+}
+.NavPart
+{
+    display: flex;
+    flex-direction: row;
+    padding-top: 0.5rem;
+    width:100%;
+    background-color: white;
+    position:sticky;
+    top:0;
+    
+}
+.logoimg
+{
+    width:80px;
+    height:80px;
+    margin-left: 1rem;
+}
+.links
+{
+    display: flex;
+    padding:1rem;
+    margin-left: 30%;
+}
+.linkEach
+{
+    font-size: 28px;
+    letter-spacing: 3px;
+    color:#85929E;
+    font-weight: bolder;
+    padding:3px;
+    margin-right:3rem;
+    text-decoration: none;
+}
+.bar
+{
+    font-size: 28px;
+    color:#5DADE2;
+    position:absolute;
+    right:1rem;
+    padding:1rem;
+}
+.bar:hover
+{
+    cursor: pointer;
+    color:#2874A6;
+}
+.linkEach:hover,a:hover
+    {
+       
+        color:#5DADE2;
+        font-size: 30px;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+   
+@media (max-width:750px)
+{
+    .links
+    {
+        display:none;
+    }
+
+    .links
+    {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+        margin-left: 0%;
+        padding-left: 0%;
+        
+    }
+    .linkEach
+    {
+           
+       padding-bottom: 1rem;    
+
+    }
+   
+    /*.close
+    {
+        display:none;
+        font-size: 28px;
+        color:#F22512;
+        position:absolute;
+        right:1rem;
+        padding:1rem;
+    }
+   
+
+    .close:hover
+     {
+        cursor: pointer;
+        color:#8E0E02;
+
+     }*/
+     .links ,.linkEach
+     {
+         height:0;
+         overflow: hidden;
+         transition: var(--transition);
+         transition:0.5s;
+     }
+    
+    .show-links,.linkEach ,.coverPart
+    {
+        height: 14rem;
+        transition:0.5s;
+    }
+    
+   
+ }
+@media(min-width:750px)
+{
+    .bar
+    {
+        display:none;
+    }
+}
+
+.coverPart
+{
+   
+   color:white;
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   min-height: 40rem;
+   background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
+   url(./hero-bcg.jpeg) center/cover no-repeat;
+    
+}
+
+.heading
+{
+    font-size: 55px;
+    font-weight: bolder;
+    color:white;
+    letter-spacing: 3px;
+    margin-top: 3rem;
+}
+.content
+{
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+.explore
+{
+    color:white;
+    background: transparent;
+    border:white 3px solid;
+    padding:5px;
+    padding-left:15px;
+    padding-right:15px;
+    margin-top: 1rem;
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+.explore:hover
+{
+    cursor:pointer;
+    background: white;
+    color: #5DADE2;
+}
+.aboutPart
+{
+    min-height: 30rem;
+}
+.headp
+{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    color:#2874A6;
+    letter-spacing: 3px;
+    box-shadow: #5DADE2 0.15rem 0.15rem 0.15rem;
+    padding:4rem;
+}
+.copyrightPart
+{
+    background:#1A5276 ;
+    color:white;
+    text-align: center;
+    letter-spacing: 3px;
+    padding:1rem;
+    font-weight: bold;
+}
+a
+{
+    font-size: 28px;
+    letter-spacing: 3px;
+    color:#85929E;
+    font-weight: bolder;
+    padding:3px;
+    margin-right:3rem;
+    text-decoration: none;
+}
